@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Zvenians</title>
+    <meta name="description" content="Contact information for Zvenians.">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-box {
+            background-color: var(--surface-color);
+            padding: var(--spacing-8);
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+        }
+        .contact-link {
+            display: inline-block;
+            margin-top: var(--spacing-4);
+            font-size: var(--font-size-lg);
+            color: var(--accent-color);
+            font-weight: var(--font-weight-medium);
+        }
+        .contact-link:hover {
+            color: var(--accent-hover);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">Zvenians</a>
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mac.html">Mac</a>
+                <a href="store.html">Store</a>
+                <a href="biodata.html">About</a>
+                <a href="contact_us.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: calc(var(--nav-height) + var(--spacing-16)); min-height: 80vh; display: flex; align-items: center;">
+        <div class="container" style="max-width: 600px;">
+            <div class="contact-box">
+                <h1 class="heading-sm mb-4">Get in Touch</h1>
+                <p class="text-secondary mb-8">
+                    This is a static portfolio page. To reach out or view more projects, please connect via GitHub.
+                </p>
+                <a href="https://github.com/zvenians" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    github.com/zvenians &rarr;
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mac.html">Mac</a></li>
+                        <li><a href="store.html">Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Profile</h4>
+                    <ul>
+                        <li><a href="biodata.html">About</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Source</h4>
+                    <ul>
+                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Notice</h4>
+                    <p class="text-secondary" style="font-size: var(--font-size-xs);">A modernized legacy static project, completely redesigned.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Zvenians Portfolio</span>
+                <span>&copy; 2026. Refreshed Layout.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

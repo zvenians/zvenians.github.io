@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Zvenians</title>
+    <meta name="description" content="Personal profile and biodata of Zvenians.">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-8);
+            margin-bottom: var(--spacing-12);
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--border-color);
+        }
+        .profile-content {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-2);
+        }
+        .skill-tag {
+            background-color: var(--surface-color);
+            padding: var(--spacing-2) var(--spacing-4);
+            border-radius: 999px;
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">Zvenians</a>
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mac.html">Mac</a>
+                <a href="store.html">Store</a>
+                <a href="biodata.html" class="active">About</a>
+                <a href="contact_us.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: calc(var(--nav-height) + var(--spacing-16)); min-height: 80vh;">
+        <div class="container" style="max-width: 800px;">
+            <div class="profile-header">
+                <img src="assets/images/IMG_4488.JPG" alt="Zvenians Portrait" class="profile-image">
+                <div class="profile-content">
+                    <h1 class="heading-sm mb-2">Zvenians</h1>
+                    <p class="text-secondary" style="font-size: var(--font-size-lg);">Developer & Designer</p>
+                </div>
+            </div>
+
+            <section class="mb-12">
+                <h2 class="heading-sm mb-4">About</h2>
+                <p class="text-secondary mb-4">
+                    Welcome to my personal showcase. This repository began as a 2020 web development study and has evolved into a modern static presentation. It reflects an ongoing interest in clean layouts, structural HTML, and minimal aesthetics.
+                </p>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="heading-sm mb-4">Skills</h2>
+                <div class="skill-list">
+                    <span class="skill-tag">Web Design</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Responsive Layout</span>
+                    <span class="skill-tag">Static Sites</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mac.html">Mac</a></li>
+                        <li><a href="store.html">Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Profile</h4>
+                    <ul>
+                        <li><a href="biodata.html">About</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Source</h4>
+                    <ul>
+                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Notice</h4>
+                    <p class="text-secondary" style="font-size: var(--font-size-xs);">A modernized legacy static project, completely redesigned.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Zvenians Portfolio</span>
+                <span>&copy; 2026. Refreshed Layout.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
