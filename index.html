@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zvenians - Apple Inspired Portfolio</title>
     <meta name="description" content="Zvenians: An independent personal student project inspired by Apple's visual design language.">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="assets/images/applelogo.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="theme-white">
     <nav class="global-nav">
         <div class="global-nav-content">
             <a href="index.html" class="global-nav-brand" aria-label="Home">
@@ -29,93 +29,98 @@
 
     <main style="padding-top: var(--nav-height);">
         
-        <!-- 1. Dominant Hero (Option C: Text top, Large Image bottom) -->
-        <section class="hero-section theme-dark">
-            <div class="hero-copy">
+        <!-- 01 HERO: Option C - Text Top, Transparent Isolated Image Bottom -->
+        <section class="hero-isolated theme-white">
+            <div class="hero-isolated-copy">
                 <h2 class="typography-hero-headline">MacBook Air</h2>
                 <h3 class="typography-hero-subhead">Lean. Mean. M5 machine.</h3>
                 <div class="cta-group">
-                    <a href="mac.html" class="cta-button">Learn more</a>
-                    <a href="store.html" class="cta-button cta-button-secondary">Buy</a>
+                    <a href="mac.html" class="apple-link apple-link-large">Learn more</a>
+                    <a href="store.html" class="apple-link apple-link-large">Buy</a>
                 </div>
             </div>
-            <img src="assets/images/macbook-air-m5.jpg" alt="MacBook Air M5" class="hero-media">
+            <div class="hero-isolated-media">
+                <!-- Using a transparent cutout image to ensure 0 overlap and perfect composition -->
+                <img src="assets/images/macbook-air-m5-transparent.jpg" alt="MacBook Air M5">
+            </div>
         </section>
 
-        <!-- 2. Quiet Typography Break -->
-        <section class="feature-section theme-white">
+        <!-- 02 QUIET TYPOGRAPHY -->
+        <section class="feature-section theme-light">
             <h2 class="typography-section-title">Profoundly powerful.<br>Perfectly minimal.</h2>
             <p class="typography-intro" style="margin-top: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
                 A personal web experience engineered with the visual discipline, pacing, and typographic rigor of Apple.com.
             </p>
         </section>
 
-        <!-- 3. Large Campaign (Option C) -->
-        <section class="hero-section theme-light">
-            <div class="hero-copy">
+        <!-- 03 LARGE CAMPAIGN: Option B - Split layout (0% collision risk) -->
+        <section class="hero-split theme-white">
+            <div class="hero-split-copy">
                 <h2 class="typography-hero-headline">Mac mini</h2>
                 <h3 class="typography-hero-subhead">More muscle. More hustle.</h3>
                 <div class="cta-group">
-                    <a href="mac.html" class="cta-button">Learn more</a>
-                    <a href="store.html" class="cta-button cta-button-secondary">Buy</a>
+                    <a href="mac.html" class="apple-link apple-link-large">Learn more</a>
+                    <a href="store.html" class="apple-link apple-link-large">Buy</a>
                 </div>
             </div>
-            <img src="assets/images/mac-mini-m6.jpg" alt="Mac mini M6" class="hero-media" style="width: 80%;">
+            <div class="hero-split-media" style="background-color: var(--bg-light);">
+                <img src="assets/images/mac-mini-m6.jpg" alt="Mac mini M6" style="object-position: left center;">
+            </div>
         </section>
 
-        <!-- 4. Split Editorial Section (Option B) -->
-        <section class="split-section theme-white">
-            <div class="split-copy">
+        <!-- 04 SPLIT CAMPAIGN: Option B -->
+        <section class="hero-split reversed theme-white">
+            <div class="hero-split-copy">
                 <h2 class="typography-section-title">iPhone 16 Pro</h2>
-                <h3 class="typography-hero-subhead" style="margin-top: 12px;">Hello, Apple Intelligence.</h3>
+                <h3 class="typography-hero-subhead">Hello, Apple Intelligence.</h3>
                 <div class="cta-group">
-                    <a href="store.html" class="cta-button">Learn more</a>
-                    <a href="store.html" class="cta-button cta-button-secondary">Buy</a>
+                    <a href="store.html" class="apple-link apple-link-large">Learn more</a>
+                    <a href="store.html" class="apple-link apple-link-large">Buy</a>
                 </div>
             </div>
-            <div class="split-media-container">
-                <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro" class="split-media">
+            <div class="hero-split-media">
+                <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro">
             </div>
         </section>
 
-        <!-- 5. Image Dominant Section (Option D: Full Bleed) -->
+        <!-- 05 IMMERSIVE IMAGE: Option D Full Bleed with Glass Overlay -->
         <section class="hero-bleed theme-dark">
-            <img src="assets/images/apple-intelligence.jpg" alt="Apple Intelligence" class="hero-media" style="opacity: 0.6;">
-            <div class="hero-copy">
+            <img src="assets/images/apple-intelligence.jpg" alt="Apple Intelligence" class="hero-bleed-media">
+            <div class="hero-bleed-overlay">
                 <h2 class="typography-hero-headline">Apple Intelligence</h2>
                 <h3 class="typography-hero-subhead">AI for the rest of us.</h3>
                 <div class="cta-group">
-                    <a href="mac.html" class="cta-button" style="background-color: var(--bg-white); color: var(--text-dark);">Explore</a>
+                    <a href="mac.html" class="apple-link apple-link-large" style="color: var(--text-light);">Explore</a>
                 </div>
             </div>
         </section>
 
-        <!-- 6. Dark Campaign (Split) -->
-        <section class="split-section theme-dark" style="background-color: var(--bg-dark); flex-direction: row-reverse;">
-            <div class="split-copy">
+        <!-- 06 DARK CAMPAIGN: Option B -->
+        <section class="hero-split theme-dark">
+            <div class="hero-split-copy">
                 <h2 class="typography-section-title">
                     <img src="assets/images/applelogo.png" style="height: 36px; filter: brightness(0) invert(1); vertical-align: middle; margin-right: 4px;" alt="Apple">WATCH
                 </h2>
-                <h3 class="typography-hero-subhead" style="margin-top: 12px;">Thinstant classic.</h3>
+                <h3 class="typography-hero-subhead">Thinstant classic.</h3>
                 <div class="cta-group">
-                    <a href="store.html" class="apple-link">Learn more</a>
-                    <a href="store.html" class="apple-link">Buy</a>
+                    <a href="store.html" class="apple-link apple-link-large">Learn more</a>
+                    <a href="store.html" class="apple-link apple-link-large">Buy</a>
                 </div>
             </div>
-            <div class="split-media-container">
-                <img src="assets/images/apple-watch.jpg" alt="Apple Watch" class="split-media">
+            <div class="hero-split-media">
+                <img src="assets/images/apple-watch.jpg" alt="Apple Watch">
             </div>
         </section>
 
-        <!-- 7. Zvenians Identity -->
-        <section class="feature-section theme-light" style="padding-top: 100px; padding-bottom: 100px;">
+        <!-- 07 ZVENIANS IDENTITY -->
+        <section class="feature-section theme-light">
             <span class="typography-eyebrow">The Creator</span>
-            <h2 class="typography-section-title" style="margin-top: 16px;">Designed by Zvenians.</h2>
+            <h2 class="typography-section-title">Designed by Zvenians.</h2>
             <p class="typography-intro" style="margin-top: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                A complete visual reconstruction from the ground up. Moving away from legacy concepts into a modern, cinematic static experience.
+                A complete visual reconstruction. Moving away from legacy concepts into a modern, cinematic static experience.
             </p>
-            <div class="cta-group" style="margin-top: 40px;">
-                <a href="biodata.html" class="cta-button">View Profile</a>
+            <div class="cta-group">
+                <a href="biodata.html" class="apple-link apple-link-large">View Profile</a>
             </div>
         </section>
 

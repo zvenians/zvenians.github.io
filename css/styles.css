@@ -8,9 +8,7 @@
   --text-dark: #1d1d1f;
   --text-light: #f5f5f7;
   --text-gray: #86868b;
-  --text-gray-dark: #a1a1a6;
   --border-light: #d2d2d7;
-  --border-dark: #424245;
 
   --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -61,7 +59,6 @@ img {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   z-index: 9999;
 }
-
 .global-nav-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -71,7 +68,6 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
 .global-nav-brand img {
   height: 16px;
   width: auto;
@@ -80,18 +76,15 @@ img {
   opacity: 0.8;
   transition: opacity 0.3s;
 }
-
 .global-nav-brand:hover img {
   opacity: 1;
 }
-
 .global-nav-links {
   display: flex;
   gap: 32px;
   align-items: center;
   height: 100%;
 }
-
 .global-nav-links a {
   color: #f5f5f7;
   font-size: 12px;
@@ -100,11 +93,9 @@ img {
   opacity: 0.8;
   transition: opacity 0.3s;
 }
-
 .global-nav-links a:hover {
   opacity: 1;
 }
-
 .mobile-nav-toggle {
   display: none;
   background: none;
@@ -114,13 +105,11 @@ img {
   cursor: pointer;
   opacity: 0.8;
 }
-
 .mobile-nav-toggle svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
 }
-
 @media (max-width: 768px) {
   .global-nav-links { display: none; }
   .mobile-nav-toggle { display: block; }
@@ -128,23 +117,23 @@ img {
 
 /* Typography Hierarchy */
 .typography-hero-headline {
-  font-size: clamp(40px, 6vw, 64px);
-  line-height: 1.07143;
+  font-size: clamp(48px, 6vw, 72px);
+  line-height: 1.05;
   font-weight: 600;
   letter-spacing: -0.015em;
 }
 
 .typography-hero-subhead {
   font-size: clamp(21px, 3vw, 28px);
-  line-height: 1.14286;
+  line-height: 1.15;
   font-weight: 400;
   letter-spacing: 0.007em;
-  margin-top: 6px;
+  margin-top: 12px;
 }
 
 .typography-section-title {
-  font-size: clamp(32px, 5vw, 48px);
-  line-height: 1.1;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
   font-weight: 600;
   letter-spacing: -0.01em;
 }
@@ -173,46 +162,8 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 18px;
+  margin-top: 24px;
 }
-
-.cta-button {
-  display: inline-block;
-  background-color: var(--apple-blue);
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  padding: 11px 21px;
-  border-radius: 980px;
-  transition: background-color 0.2s;
-}
-
-.cta-button:hover {
-  background-color: var(--apple-blue-hover);
-}
-
-.cta-button-secondary {
-  background-color: transparent;
-  color: var(--text-dark);
-  border: 1px solid var(--text-dark);
-}
-
-.cta-button-secondary:hover {
-  background-color: var(--text-dark);
-  color: var(--bg-white);
-}
-
-.theme-dark .cta-button-secondary {
-  color: var(--text-light);
-  border-color: var(--text-light);
-}
-
-.theme-dark .cta-button-secondary:hover {
-  background-color: var(--text-light);
-  color: var(--text-dark);
-}
-
 .apple-link {
   color: var(--apple-blue);
   font-size: 19px;
@@ -221,11 +172,9 @@ img {
   display: inline-flex;
   align-items: center;
 }
-
 .apple-link:hover {
   text-decoration: underline;
 }
-
 .apple-link::after {
   content: '›';
   font-size: 22px;
@@ -233,82 +182,113 @@ img {
   position: relative;
   top: 1px;
 }
+.apple-link-large {
+  font-size: 21px;
+}
 
 /* Themes */
 .theme-dark {
   background-color: var(--bg-dark);
   color: var(--text-light);
 }
-
 .theme-dark .typography-hero-subhead {
   color: var(--text-light);
 }
-
 .theme-light {
   background-color: var(--bg-light);
   color: var(--text-dark);
 }
-
 .theme-white {
   background-color: var(--bg-white);
   color: var(--text-dark);
 }
 
-/* Layout Modules */
-
-/* 1. Hero Section (Option C: Text top, Image bottom) */
-.hero-section {
+/* NEW COMPOSITION: Hero Split (Guarantees no text collision) */
+.hero-split {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 85vh;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.hero-split-copy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  text-align: center;
+  z-index: 2;
+}
+.hero-split-media {
+  flex: 1.2;
   position: relative;
+  background-color: var(--bg-dark);
+}
+.hero-split-media img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 800px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-split.reversed {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1024px) {
+  .hero-split, .hero-split.reversed { flex-direction: column; min-height: auto; }
+  .hero-split-media { height: 60vh; min-height: 400px; flex: none; width: 100%; }
+  .hero-split-copy { padding: 60px 20px; }
+}
+
+/* NEW COMPOSITION: Text Isolated Above Image (Option C) */
+.hero-isolated {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
+  padding-top: 100px;
   margin-bottom: 12px;
 }
-
-.hero-copy {
-  z-index: 2;
+.hero-isolated-copy {
   text-align: center;
-  padding: 80px 20px 40px;
-  width: 100%;
-  max-width: 900px;
+  padding: 0 20px;
+  max-width: 800px;
+  margin-bottom: 60px;
 }
-
-.hero-media {
+.hero-isolated-media {
   width: 100%;
-  max-width: 2560px;
+  max-width: 1200px;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.hero-isolated-media img {
+  width: 100%;
   height: auto;
-  margin-top: auto;
-  object-fit: contain;
-  object-position: bottom;
-  z-index: 1;
+  display: block;
 }
-
 @media (max-width: 768px) {
-  .hero-section { min-height: 600px; }
-  .hero-copy { padding-top: 60px; }
+  .hero-isolated-media { border-radius: 0; }
 }
 
-/* 2. Full Bleed Hero (Option D: Text centered over full image with negative space) */
+/* NEW COMPOSITION: Full Bleed with Glass Overlay (Option D) */
 .hero-bleed {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 85vh;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: 12px;
   overflow: hidden;
 }
-.hero-bleed .hero-copy {
-  padding-top: 60px;
-  z-index: 2;
-}
-.hero-bleed .hero-media {
+.hero-bleed-media {
   position: absolute;
   top: 0;
   left: 0;
@@ -318,120 +298,76 @@ img {
   object-position: center;
   z-index: 1;
 }
-@media (max-width: 768px) {
-  .hero-bleed { height: 500px; }
-}
-
-
-/* 3. Split Section (Option B: 50/50 Desktop) */
-.split-section {
-  display: flex;
-  max-width: 2560px;
-  margin: 0 auto 12px;
-  min-height: 600px;
-  overflow: hidden;
-}
-
-.split-copy {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px;
+.hero-bleed-overlay {
+  z-index: 2;
   text-align: center;
-}
-
-.split-media-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.split-media {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-@media (max-width: 768px) {
-  .split-section { flex-direction: column; }
-  .split-copy { padding: 60px 20px 40px; }
-  .split-media-container { height: 400px; flex: none; }
+  padding: 40px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 24px;
+  max-width: 800px;
+  margin: 0 20px;
 }
 
 /* Feature/Editorial Sections */
 .feature-section {
-  padding: 140px 20px;
+  padding: 160px 20px;
   text-align: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 /* Profile / Biodata Page */
 .profile-section {
-  padding: calc(var(--nav-height) + 100px) 20px 120px;
+  padding: calc(var(--nav-height) + 120px) 20px 120px;
   max-width: 800px;
   margin: 0 auto;
-  text-align: left;
 }
-
 .profile-header {
   display: flex;
   align-items: center;
   gap: 40px;
   margin-bottom: 60px;
 }
-
 .profile-portrait {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
 }
-
 .profile-title-block h1 {
-  font-size: clamp(40px, 5vw, 56px);
+  font-size: clamp(48px, 6vw, 64px);
   font-weight: 600;
   letter-spacing: -0.015em;
   margin-bottom: 8px;
 }
-
 .profile-title-block p {
   font-size: 24px;
   color: var(--text-gray);
   font-weight: 400;
 }
-
 .profile-bio {
   font-size: 21px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--text-dark);
   margin-bottom: 40px;
-  max-width: 700px;
 }
-
 .profile-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 60px;
 }
-
 .skill-badge {
   background-color: var(--bg-light);
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 980px;
   font-size: 14px;
   font-weight: 600;
   color: var(--text-dark);
 }
-
 @media (max-width: 768px) {
   .profile-header {
     flex-direction: column;
@@ -442,14 +378,13 @@ img {
 
 /* Store Specific */
 .store-header {
-  padding: 80px 20px 40px;
+  padding: 120px 20px 60px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .store-strip {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   overflow-x: auto;
   padding: 20px 20px 60px;
   scroll-snap-type: x mandatory;
@@ -457,59 +392,62 @@ img {
   max-width: 1400px;
   margin: 0 auto;
 }
-
 .store-strip::-webkit-scrollbar { display: none; }
-
-.store-card {
-  flex: 0 0 400px;
+.store-tile {
+  flex: 0 0 420px;
   scroll-snap-align: start;
   background-color: var(--bg-white);
   border-radius: 24px;
-  padding: 40px;
   height: 520px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
-
-.store-card-img {
+.store-tile-copy {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 16px;
+  padding: 40px;
+  z-index: 2;
+  text-align: left;
 }
-
+.store-tile-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 @media (max-width: 768px) {
-  .store-card {
-    flex: 0 0 300px;
-    height: 480px;
-    padding: 30px;
-  }
-  .store-card-img { height: 240px; }
+  .store-tile { flex: 0 0 320px; height: 480px; }
+  .store-tile-copy { padding: 30px; }
 }
 
 /* Contact Specific */
 .contact-section {
   padding: calc(var(--nav-height) + 120px) 20px 120px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  text-align: center;
 }
-
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 32px;
   margin-top: 60px;
 }
-
 .contact-card {
   background-color: var(--bg-white);
   border-radius: 24px;
-  padding: 40px;
-  text-align: left;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
 }
-
 @media (max-width: 768px) {
   .contact-grid { grid-template-columns: 1fr; }
 }
@@ -520,73 +458,60 @@ img {
   color: var(--text-gray);
   font-size: 12px;
   padding: 0 20px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
-
 .site-footer-content {
   max-width: 980px;
   margin: 0 auto;
   padding: 40px 0 20px;
 }
-
 .footer-intro {
   padding-bottom: 24px;
   border-bottom: 1px solid var(--border-light);
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
-
-.footer-intro p {
-  margin-bottom: 8px;
+.footer-intro strong {
+  color: var(--text-dark);
+  font-size: 14px;
 }
-
 .footer-directory {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 40px;
 }
-
 .footer-column {
   flex: 1;
   min-width: 200px;
 }
-
 .footer-column h3 {
   font-size: 12px;
   font-weight: 600;
   color: var(--text-dark);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
-
 .footer-column ul {
   list-style: none;
 }
-
 .footer-column ul li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
-
 .footer-column a {
   color: var(--text-gray);
   transition: color 0.2s;
 }
-
 .footer-column a:hover {
   color: var(--text-dark);
   text-decoration: underline;
 }
-
 .footer-bottom {
   border-top: 1px solid var(--border-light);
-  padding: 16px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
 }
-
 @media (max-width: 768px) {
-  .footer-directory { gap: 24px; flex-direction: column; }
-  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .footer-directory { flex-direction: column; gap: 32px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
 }

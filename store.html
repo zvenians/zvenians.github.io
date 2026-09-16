@@ -35,42 +35,45 @@
             </h1>
         </div>
 
-        <h2 class="typography-section-title" style="max-width: 1200px; margin: 60px auto 32px; padding: 0 20px;">
+        <h2 class="typography-section-title" style="max-width: 1200px; margin: 0 auto 32px; padding: 0 20px;">
             The latest. <span style="color: var(--text-gray);">Take a look at what’s new.</span>
         </h2>
         
+        <!-- Apple style horizontal scroll tiles -->
         <div class="store-strip">
             
-            <div class="store-card">
-                <div>
+            <div class="store-tile">
+                <div class="store-tile-copy">
                     <span class="typography-eyebrow">MacBook Air</span>
                     <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Lean. Mean. M5 machine.</h3>
                 </div>
-                <img src="assets/images/macbook-air-m5.jpg" alt="MacBook Air" class="store-card-img">
+                <img src="assets/images/macbook-air-m5-transparent.jpg" alt="MacBook Air" class="store-tile-media" style="object-fit: contain; object-position: bottom; background-color: var(--bg-white); padding: 40px;">
             </div>
 
-            <div class="store-card">
-                <div>
+            <div class="store-tile">
+                <div class="store-tile-copy">
                     <span class="typography-eyebrow" style="color: #bf4800;">New</span>
                     <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Mac mini with M6.</h3>
                 </div>
-                <img src="assets/images/mac-mini-m6.jpg" alt="Mac mini" class="store-card-img">
+                <img src="assets/images/mac-mini-m6-transparent.jpg" alt="Mac mini" class="store-tile-media" style="object-fit: contain; object-position: bottom; background-color: var(--bg-white); padding: 40px;">
             </div>
 
-            <div class="store-card">
-                <div>
+            <div class="store-tile">
+                <div class="store-tile-copy">
                     <span class="typography-eyebrow">iPhone 16 Pro</span>
                     <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Hello, Apple Intelligence.</h3>
                 </div>
-                <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro" class="store-card-img">
+                <!-- Assuming this is a lifestyle shot, object-fit cover works perfectly here as it fills the tile -->
+                <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro" class="store-tile-media">
             </div>
 
-            <div class="store-card">
-                <div>
+            <div class="store-tile">
+                <div class="store-tile-copy">
                     <span class="typography-eyebrow">iPad Pro</span>
                     <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Unbelievably thin.</h3>
                 </div>
-                <img src="assets/images/ipad-pro.jpg" alt="iPad Pro" class="store-card-img">
+                <!-- Same here, edge to edge photo fills the tile gracefully -->
+                <img src="assets/images/ipad-pro.jpg" alt="iPad Pro" class="store-tile-media">
             </div>
 
         </div>
