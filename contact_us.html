@@ -7,16 +7,16 @@
     <meta name="theme-color" content="#f5f5f7">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-color: var(--bg-color);">
-    <nav class="navbar" style="background-color: rgba(255, 255, 255, 0.8); border-bottom: 1px solid rgba(0,0,0,0.16);">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand" aria-label="Home">
+<body class="theme-light">
+    <nav class="global-nav" style="background-color: rgba(255, 255, 255, 0.8); border-bottom: 1px solid rgba(0,0,0,0.16);">
+        <div class="global-nav-content">
+            <a href="index.html" class="global-nav-brand" aria-label="Home">
                 <img src="assets/images/applelogo.png" alt="Apple Logo" style="filter: brightness(0);">
             </a>
-            <button class="nav-mobile-toggle" aria-label="Toggle navigation" style="color: #1d1d1f;">
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation" style="color: #1d1d1f;">
                 <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
-            <div class="nav-links">
+            <div class="global-nav-links">
                 <a href="mac.html" style="color: #1d1d1f;">Mac</a>
                 <a href="store.html" style="color: #1d1d1f;">Store</a>
                 <a href="biodata.html" style="color: #1d1d1f;">Biodata</a>
@@ -25,35 +25,31 @@
         </div>
     </nav>
 
-    <main style="padding: calc(var(--nav-height) + 80px) 20px 120px; max-width: 600px; margin: 0 auto; text-align: center;">
-        
-        <h1 class="headline" style="font-size: 48px; margin-bottom: 24px;">Contact</h1>
-        <p style="font-size: 19px; color: var(--text-secondary); margin-bottom: 60px;">
+    <main class="contact-section">
+        <h1 class="typography-hero-headline" style="color: #1d1d1f; margin-bottom: 16px;">Contact</h1>
+        <p class="typography-intro" style="font-weight: 400; color: var(--text-gray);">
             This is a static portfolio page. To reach out or view more projects, please connect via GitHub.
         </p>
 
-        <div style="background-color: var(--surface-color); border-radius: 18px; padding: 40px; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
-            <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 12px;">GitHub</h3>
-            <p style="font-size: 17px; color: var(--text-secondary); margin-bottom: 24px;">
-                View my repositories and open source contributions.
-            </p>
+        <div class="contact-card">
+            <h3 style="font-size: 24px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px;">GitHub</h3>
+            <p style="font-size: 17px; color: var(--text-gray); margin-bottom: 24px;">View my repositories and open source contributions.</p>
             <a href="https://github.com/zvenians" class="apple-link" target="_blank" rel="noopener">github.com/zvenians</a>
         </div>
-
     </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div style="border-bottom: 1px solid #d2d2d7; padding-bottom: 16px; margin-bottom: 16px;">
-                <p>1. This is a personal student project and is not affiliated with Apple Inc.</p>
+    <footer class="global-footer">
+        <div class="global-footer-content">
+            <div style="padding-bottom: 16px;">
+                <p>1. This is an independent personal student project created by Zvenians.</p>
             </div>
             <div class="footer-directory">
                 <div class="footer-column">
-                    <h3>About Zvenians</h3>
+                    <h3>Explore</h3>
                     <ul>
                         <li><a href="biodata.html">Biodata</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
-                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener">GitHub Profile</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,5 +59,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
