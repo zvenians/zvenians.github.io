@@ -6,123 +6,169 @@
     <title>Zvenians | Portfolio</title>
     <meta name="description" content="A minimalist, premium static showcase by Zvenians.">
     <meta name="theme-color" content="#000000">
-    <meta property="og:title" content="Zvenians | Portfolio">
-    <meta property="og:description" content="A minimalist, premium static showcase by Zvenians.">
-    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="dark-mode">
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand">
-                Zvenians
+            <a href="index.html" class="nav-brand" aria-label="Home">
+                <img src="assets/images/applelogo.png" alt="Apple Logo">
             </a>
             <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
             <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
                 <a href="mac.html">Mac</a>
                 <a href="store.html">Store</a>
-                <a href="biodata.html">About</a>
+                <a href="biodata.html">Biodata</a>
                 <a href="contact_us.html">Contact</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1 class="heading-xl">Designed with<br>intention.</h1>
-                <p class="hero-subtitle">A modern static showcase exploring layout, typography, and responsive restraint.</p>
-                <div class="hero-actions">
-                    <a href="mac.html" class="btn btn-primary">Explore Mac</a>
-                    <a href="store.html" class="btn btn-secondary">Visit Store</a>
+        <section class="section hero dark">
+            <div class="section-content">
+                <h1 class="headline">iPhone 11 Pro</h1>
+                <h2 class="subhead">Pro cameras. Pro display. Pro performance.</h2>
+                <div class="section-links">
+                    <a href="store.html" class="apple-link">Learn more</a>
+                    <a href="store.html" class="apple-link">Buy</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/images/hero3.jpg" alt="Premium Device Display" width="1000" height="600" style="border-radius: var(--border-radius-lg); object-fit: cover; max-height: 500px;">
+            <div class="section-image" style="margin-top: 50px;">
+                <img src="assets/images/hero3.jpg" alt="iPhone 11 Pro">
             </div>
         </section>
 
-        <section class="section">
-            <div class="container">
-                <div class="text-center mb-8">
-                    <h2 class="heading-lg">Visual Rhythm</h2>
-                    <p class="text-secondary mt-8" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-                        This legacy 2020 layout has been completely redesigned to emphasize spaciousness, typography, and clean hierarchy.
-                    </p>
+        <section class="section light">
+            <div class="section-content">
+                <h1 class="headline">iPhone SE</h1>
+                <h2 class="subhead">Lots to love. Less to spend.</h2>
+                <div class="section-links">
+                    <a href="store.html" class="apple-link">Learn more</a>
+                    <a href="store.html" class="apple-link">Buy</a>
                 </div>
-                
-                <div class="grid-2">
-                    <article class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">Editorial Focus</h3>
-                            <p class="card-desc">Strong typography scale and generous whitespace.</p>
-                            <a href="mac.html" class="link-arrow">View collection &rarr;</a>
-                        </div>
-                        <div class="card-image-wrapper">
-                            <img src="assets/images/mac1.jpg" alt="Editorial Focus">
-                        </div>
-                    </article>
-                    
-                    <article class="card has-bg-image">
-                        <div class="card-content">
-                            <h3 class="card-title text-primary">Performance</h3>
-                            <p class="card-desc" style="color: rgba(255,255,255,0.8);">Zero frameworks, fully static presentation.</p>
-                        </div>
-                        <div class="card-image-wrapper">
-                            <img src="assets/images/how_to_shoot_large.jpg" alt="Performance">
-                        </div>
-                    </article>
-                </div>
+            </div>
+            <div class="section-image" style="margin-top: 40px;">
+                <img src="assets/images/hero.jpg" alt="iPhone SE">
             </div>
         </section>
 
-        <section class="section" style="background-color: var(--surface-color);">
-            <div class="container text-center">
-                <span class="text-secondary font-semibold" style="text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--font-size-sm);">Project Status</span>
-                <h2 class="heading-md mt-8 mb-4">Static Showcase</h2>
-                <p class="text-secondary" style="max-width: 600px; margin: 0 auto var(--spacing-8);">
-                    This project contains no backend logic, databases, or API integrations. It stands as a pure HTML/CSS structural study, evolved from an academic project.
-                </p>
-                <a href="https://github.com/zvenians" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Source</a>
-            </div>
-        </section>
+        <div class="module-grid">
+            <article class="module has-bg-image content-bottom">
+                <img src="assets/images/shop_for_college_large.jpg" alt="Turn up summer" class="module-bg">
+                <div class="module-content">
+                    <h3 class="module-title">Turn up summer.</h3>
+                    <h4 class="module-subhead">Buy a Mac or iPad Pro for college.<br>Get Beats on us.</h4>
+                </div>
+            </article>
+
+            <article class="module dark has-bg-image content-bottom">
+                <img src="assets/images/behind_the_mac_boniface_large.jpg" alt="Behind the Mac" class="module-bg">
+                <div class="module-content">
+                    <h3 class="module-title">Behind the Mac</h3>
+                    <div class="module-links">
+                        <a href="mac.html" class="apple-link">Watch the film</a>
+                        <a href="mac.html" class="apple-link">Explore Mac</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="module light content-bottom">
+                <div class="module-content" style="padding-top: 40px; padding-bottom: 0;">
+                    <h3 class="module-title">iPhone 8</h3>
+                    <h4 class="module-subhead">A new generation of iPhone.</h4>
+                    <div class="module-links">
+                        <a href="store.html" class="apple-link">Learn more</a>
+                        <a href="store.html" class="apple-link">Buy</a>
+                    </div>
+                </div>
+                <img src="assets/images/iphone_8_large.jpg" alt="iPhone 8" style="margin-top: 30px; object-fit: contain; width: 100%; height: 100%; z-index: 1;">
+            </article>
+
+            <article class="module dark has-bg-image">
+                <img src="assets/images/how_to_shoot_large.jpg" alt="How to shoot on iPhone" class="module-bg">
+                <div class="module-content">
+                    <h3 class="module-title">How to shoot on iPhone</h3>
+                    <h4 class="module-subhead">Make the beautiful game even more beautiful.</h4>
+                </div>
+            </article>
+
+            <article class="module light content-bottom">
+                <div class="module-content" style="padding-top: 40px; padding-bottom: 0;">
+                    <h3 class="module-title">AirPods</h3>
+                    <h4 class="module-subhead">Wireless. Effortless. Magical.</h4>
+                    <div class="module-links">
+                        <a href="store.html" class="apple-link">Learn more</a>
+                        <a href="store.html" class="apple-link">Buy</a>
+                    </div>
+                </div>
+                <img src="assets/images/airpods_large.jpg" alt="AirPods" style="margin-top: 30px; object-fit: contain; width: 100%; height: 100%; z-index: 1;">
+            </article>
+
+            <article class="module light content-bottom">
+                <div class="module-content" style="padding-top: 40px; padding-bottom: 0;">
+                    <h3 class="module-title"><img src="assets/images/applelogo.png" style="display:inline-block; height:32px; filter:brightness(0); vertical-align:text-bottom;" alt="Apple"> WATCH</h3>
+                    <h4 class="module-subhead">The freedom of cellular.</h4>
+                    <div class="module-links">
+                        <a href="store.html" class="apple-link">Learn more</a>
+                        <a href="store.html" class="apple-link">Buy</a>
+                    </div>
+                </div>
+                <img src="assets/images/watch_series_3_large.jpg" alt="Watch" style="margin-top: 30px; object-fit: contain; width: 100%; height: 100%; z-index: 1;">
+            </article>
+        </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
+        <div class="footer-content">
+            <div style="border-bottom: 1px solid var(--border-dark); padding-bottom: 16px; margin-bottom: 16px;">
+                <p>More ways to shop: Visit a <a href="#" style="color: var(--link-color);">Store</a>, call 1-800-MY-APPLE, or <a href="#" style="color: var(--link-color);">find a reseller</a>.</p>
+            </div>
+            <div class="footer-nav">
                 <div class="footer-col">
-                    <h4>Collections</h4>
+                    <h3>Explore</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="mac.html">Mac</a></li>
-                        <li><a href="store.html">Store</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Profile</h4>
+                    <h3>Account</h3>
                     <ul>
-                        <li><a href="biodata.html">About</a></li>
-                        <li><a href="contact_us.html">Contact</a></li>
+                        <li><a href="biodata.html">Manage Biodata</a></li>
+                        <li><a href="store.html">Store Account</a></li>
+                        <li><a href="#">iCloud.com</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Source</h4>
+                    <h3>Values</h3>
                     <ul>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Environment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>About Zvenians</h3>
+                    <ul>
+                        <li><a href="contact_us.html">Contact Us</a></li>
                         <li><a href="https://github.com/zvenians" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Notice</h4>
-                    <p class="text-secondary" style="font-size: var(--font-size-xs);">A modernized legacy static project, completely redesigned.</p>
-                </div>
             </div>
             <div class="footer-bottom">
-                <span>Zvenians Portfolio</span>
-                <span>&copy; 2026. Refreshed Layout.</span>
+                <div>Copyright © 2026 Zvenians. All rights reserved.</div>
+                <div style="display:flex; gap:16px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div>United States</div>
             </div>
         </div>
     </footer>

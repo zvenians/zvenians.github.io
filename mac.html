@@ -3,101 +3,122 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mac Showcase | Zvenians</title>
-    <meta name="description" content="A clean editorial presentation of Mac hardware.">
+    <title>Mac | Zvenians</title>
+    <meta name="description" content="Mac hardware showcase.">
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="dark-mode">
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand">Zvenians</a>
+            <a href="index.html" class="nav-brand" aria-label="Home">
+                <img src="assets/images/applelogo.png" alt="Apple Logo">
+            </a>
             <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
             <div class="nav-links">
-                <a href="index.html">Home</a>
                 <a href="mac.html" class="active">Mac</a>
                 <a href="store.html">Store</a>
-                <a href="biodata.html">About</a>
+                <a href="biodata.html">Biodata</a>
                 <a href="contact_us.html">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main style="padding-top: var(--nav-height);">
-        <header class="section text-center" style="padding-bottom: 0;">
-            <div class="container">
-                <span class="text-secondary font-semibold" style="text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--font-size-xs);">Hardware Showcase</span>
-                <h1 class="heading-lg mt-8 mb-4">The Mac Chapter.</h1>
-                <p class="text-secondary" style="max-width: 600px; margin: 0 auto var(--spacing-12);">
-                    A calmer, more spacious presentation of original 2020 hardware pages, rebuilt with editorial focus.
+    <main>
+        <section class="section hero dark" style="padding-bottom: 0;">
+            <div class="section-content text-center">
+                <span class="subhead" style="color: #86868b; display: block; margin-bottom: 8px;">Mac</span>
+                <h1 class="headline" style="font-size: 72px;">Masa depan Mac<br>dimulai dari sini.</h1>
+                <p class="subhead" style="margin-top: 16px; font-size: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    An exploration of Mac hardware translated into a clean static showcase.
                 </p>
-                <img src="assets/images/mac_ipad_ipod_hero.png" alt="Hardware devices" style="max-width: 800px; margin: 0 auto;">
-            </div>
-        </header>
-
-        <section class="section">
-            <div class="container">
-                <div class="grid-2">
-                    <article class="card has-bg-image" style="min-height: 400px;">
-                        <div class="card-content">
-                            <span class="text-tertiary font-bold mb-2" style="text-transform: uppercase; font-size: var(--font-size-xs);">New</span>
-                            <h2 class="card-title text-primary">MacBook Air</h2>
-                            <p class="card-desc" style="color: rgba(255,255,255,0.8);">Lightweight powerhouse.</p>
-                        </div>
-                        <div class="card-image-wrapper">
-                            <img src="assets/images/mac2.jpg" alt="MacBook Air">
-                        </div>
-                    </article>
-
-                    <article class="card has-bg-image" style="min-height: 400px;">
-                        <div class="card-content">
-                            <span class="text-tertiary font-bold mb-2" style="text-transform: uppercase; font-size: var(--font-size-xs);">Pro</span>
-                            <h2 class="card-title text-primary">Mac mini</h2>
-                            <p class="card-desc" style="color: rgba(255,255,255,0.8);">More capability.</p>
-                        </div>
-                        <div class="card-image-wrapper">
-                            <img src="assets/images/behind_the_mac_boniface_large.jpg" alt="Mac mini">
-                        </div>
-                    </article>
+                <div class="section-links">
+                    <a href="#explore" class="apple-link">Explore the lineup</a>
                 </div>
+            </div>
+            <div class="section-image" style="margin-top: 60px;">
+                <img src="assets/images/mac_ipad_ipod_hero.png" alt="M1 Mac hero" style="width: 100%; max-width: 1200px;">
+            </div>
+        </section>
+
+        <div id="explore" class="module-grid" style="margin-top: 12px;">
+            <article class="module light content-bottom">
+                <div class="module-content" style="padding-top: 50px;">
+                    <span style="color: #bf4800; font-weight: 600; font-size: 14px; text-transform: uppercase;">New</span>
+                    <h3 class="module-title">MacBook Air</h3>
+                    <h4 class="module-subhead">Kekuatan besar dalam wujud ringan.</h4>
+                    <div class="module-links">
+                        <a href="#" class="apple-link">Selengkapnya</a>
+                    </div>
+                </div>
+                <img src="assets/images/mac2.jpg" alt="MacBook Air" style="margin-top: 40px; width: 100%; height: auto; object-fit: contain; z-index: 1; max-width: 800px;">
+            </article>
+
+            <article class="module dark has-bg-image">
+                <img src="assets/images/mac1.jpg" alt="Mac mini" class="module-bg" style="opacity: 0.6;">
+                <div class="module-content" style="padding-top: 50px;">
+                    <span style="color: #bf4800; font-weight: 600; font-size: 14px; text-transform: uppercase;">New</span>
+                    <h3 class="module-title">Mac mini</h3>
+                    <h4 class="module-subhead">Inti baru. Lebih banyak kemampuan.</h4>
+                    <div class="module-links">
+                        <a href="#" class="apple-link">Selengkapnya</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <section class="section dark">
+            <div class="section-content text-center">
+                <h2 class="headline" style="font-size: 48px;">Less clutter.<br>More focus.</h2>
+                <p class="subhead" style="margin-top: 20px; font-size: 21px; max-width: 700px; margin-left: auto; margin-right: auto; color: #86868b;">
+                    Large type, generous spacing, softer surfaces, and stronger image composition make the page easier to browse without changing its original educational purpose. This remains a static front-end project.
+                </p>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
+        <div class="footer-content">
+            <div style="border-bottom: 1px solid var(--border-dark); padding-bottom: 16px; margin-bottom: 16px;">
+                <p>More ways to shop: Visit a <a href="#" style="color: var(--link-color);">Store</a>, call 1-800-MY-APPLE, or <a href="#" style="color: var(--link-color);">find a reseller</a>.</p>
+            </div>
+            <div class="footer-nav">
                 <div class="footer-col">
-                    <h4>Collections</h4>
+                    <h3>Explore</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="mac.html">Mac</a></li>
-                        <li><a href="store.html">Store</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Profile</h4>
+                    <h3>Account</h3>
                     <ul>
-                        <li><a href="biodata.html">About</a></li>
-                        <li><a href="contact_us.html">Contact</a></li>
+                        <li><a href="biodata.html">Manage Biodata</a></li>
+                        <li><a href="store.html">Store Account</a></li>
+                        <li><a href="#">iCloud.com</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Source</h4>
+                    <h3>About Zvenians</h3>
                     <ul>
+                        <li><a href="contact_us.html">Contact Us</a></li>
                         <li><a href="https://github.com/zvenians" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Notice</h4>
-                    <p class="text-secondary" style="font-size: var(--font-size-xs);">A modernized legacy static project, completely redesigned.</p>
-                </div>
             </div>
             <div class="footer-bottom">
-                <span>Zvenians Portfolio</span>
-                <span>&copy; 2026. Refreshed Layout.</span>
+                <div>Copyright © 2026 Zvenians. All rights reserved.</div>
+                <div style="display:flex; gap:16px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div>United States</div>
             </div>
         </div>
     </footer>
