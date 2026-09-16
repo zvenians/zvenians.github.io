@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store - Zvenians</title>
+    <meta name="description" content="Store concept by Zvenians. The best way to buy the products you love.">
     <meta name="theme-color" content="#f5f5f7">
+    <link rel="icon" href="assets/images/applelogo.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="theme-light">
@@ -25,90 +27,85 @@
         </div>
     </nav>
 
-    <main style="padding-top: calc(var(--nav-height) + 60px);">
+    <main style="padding-top: var(--nav-height);">
         
-        <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
-            <h1 class="typography-hero-headline" style="font-size: 48px; color: #1d1d1f; max-width: 800px; margin-bottom: 60px;">
-                Store. <span style="color: var(--text-gray);">The best way to buy the products you love.</span>
+        <div class="store-header">
+            <h1 class="typography-hero-headline" style="color: #1d1d1f; max-width: 800px;">
+                Store. <span style="color: var(--text-gray);">The best way to discover the lineup.</span>
             </h1>
+        </div>
 
-            <div class="store-strip">
-                <div class="store-strip-item">
-                    <img src="assets/images/macbook-air-m5.jpg" alt="Mac" style="border-radius: 12px; object-fit: cover;">
-                    <h3>Mac</h3>
-                </div>
-                <div class="store-strip-item">
-                    <img src="assets/images/iphone-16-pro.jpg" alt="iPhone" style="border-radius: 12px; object-fit: cover;">
-                    <h3>iPhone</h3>
-                </div>
-                <div class="store-strip-item">
-                    <img src="assets/images/ipad-pro.jpg" alt="iPad" style="border-radius: 12px; object-fit: cover;">
-                    <h3>iPad</h3>
-                </div>
-                <div class="store-strip-item">
-                    <img src="assets/images/apple-watch.jpg" alt="Apple Watch">
-                    <h3>Apple Watch</h3>
-                </div>
-            </div>
-
-            <h2 class="typography-hero-headline" style="font-size: 28px; margin-top: 80px; margin-bottom: 32px; color: #1d1d1f;">
-                The latest. <span style="color: var(--text-gray);">Take a look at what’s new, right now.</span>
-            </h2>
+        <h2 class="typography-section-title" style="max-width: 1200px; margin: 60px auto 32px; padding: 0 20px;">
+            The latest. <span style="color: var(--text-gray);">Take a look at what’s new.</span>
+        </h2>
+        
+        <div class="store-strip">
             
-            <div class="store-strip" style="gap: 24px; padding: 0 0 40px; margin: 0; max-width: none;">
-                
-                <div style="flex: 0 0 400px; scroll-snap-align: start; background-color: var(--bg-white); border-radius: 24px; padding: 30px; height: 480px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 2px 4px 16px rgba(0,0,0,0.04);">
-                    <div style="text-align: left;">
-                        <p class="typography-eyebrow">MacBook Air</p>
-                        <h3 class="typography-hero-subhead" style="font-size: 24px; color: #1d1d1f; margin-top: 4px;">Lean. Mean. M5 machine.</h3>
-                    </div>
-                    <img src="assets/images/macbook-air-m5.jpg" alt="MacBook Air" style="width: 100%; height: 260px; object-fit: cover; border-radius: 16px;">
+            <div class="store-card">
+                <div>
+                    <span class="typography-eyebrow">MacBook Air</span>
+                    <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Lean. Mean. M5 machine.</h3>
                 </div>
-
-                <div style="flex: 0 0 400px; scroll-snap-align: start; background-color: var(--bg-white); border-radius: 24px; padding: 30px; height: 480px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 2px 4px 16px rgba(0,0,0,0.04);">
-                    <div style="text-align: left;">
-                        <p class="typography-eyebrow" style="color: #bf4800;">New</p>
-                        <h3 class="typography-hero-subhead" style="font-size: 24px; color: #1d1d1f; margin-top: 4px;">Mac mini with M6.</h3>
-                    </div>
-                    <img src="assets/images/mac-mini-m6.jpg" alt="Mac mini" style="width: 100%; height: 260px; object-fit: cover; border-radius: 16px;">
-                </div>
-
-                <div style="flex: 0 0 400px; scroll-snap-align: start; background-color: var(--bg-white); border-radius: 24px; padding: 30px; height: 480px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 2px 4px 16px rgba(0,0,0,0.04);">
-                    <div style="text-align: left;">
-                        <p class="typography-eyebrow">iPhone 16 Pro</p>
-                        <h3 class="typography-hero-subhead" style="font-size: 24px; color: #1d1d1f; margin-top: 4px;">Hello, Apple Intelligence.</h3>
-                    </div>
-                    <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro" style="width: 100%; height: 260px; object-fit: cover; border-radius: 16px;">
-                </div>
-
+                <img src="assets/images/macbook-air-m5.jpg" alt="MacBook Air" class="store-card-img">
             </div>
+
+            <div class="store-card">
+                <div>
+                    <span class="typography-eyebrow" style="color: #bf4800;">New</span>
+                    <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Mac mini with M6.</h3>
+                </div>
+                <img src="assets/images/mac-mini-m6.jpg" alt="Mac mini" class="store-card-img">
+            </div>
+
+            <div class="store-card">
+                <div>
+                    <span class="typography-eyebrow">iPhone 16 Pro</span>
+                    <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Hello, Apple Intelligence.</h3>
+                </div>
+                <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro" class="store-card-img">
+            </div>
+
+            <div class="store-card">
+                <div>
+                    <span class="typography-eyebrow">iPad Pro</span>
+                    <h3 class="typography-hero-subhead" style="margin-top: 4px; font-weight: 600;">Unbelievably thin.</h3>
+                </div>
+                <img src="assets/images/ipad-pro.jpg" alt="iPad Pro" class="store-card-img">
+            </div>
+
         </div>
 
     </main>
 
-    <footer class="global-footer">
-        <div class="global-footer-content">
-            <div style="padding-bottom: 16px;">
-                <p>1. This is an independent personal student project created by Zvenians.</p>
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <div class="footer-intro">
+                <p><strong>ZVENIANS</strong></p>
+                <p>Independent static web project inspired by Apple design. Concept retail interface.</p>
             </div>
+            
             <div class="footer-directory">
                 <div class="footer-column">
                     <h3>Explore</h3>
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="mac.html">Mac</a></li>
                         <li><a href="store.html">Store</a></li>
                         <li><a href="biodata.html">Biodata</a></li>
-                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener">GitHub Profile</a></li>
+                        <li><a href="https://github.com/zvenians/zvenians.github.io" target="_blank" rel="noopener">Source Code</a></li>
                     </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <div>Copyright © 2026 Zvenians. All rights reserved.</div>
-                <div class="footer-legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                </div>
-                <div>United States</div>
+                <div>&copy; 2026 Zvenians. Independent project inspired by Apple design.</div>
             </div>
         </div>
     </footer>

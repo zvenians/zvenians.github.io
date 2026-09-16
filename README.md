@@ -1,35 +1,39 @@
-# Zvenians Portfolio
+# Zvenians Portfolio Concept
 
-**Apple-inspired responsive static web experience and personal profile project.**
+An independent personal student project inspired by Apple's visual design language.
 
-This project is a complete modern redesign of a historical 2020 web development student project. The visual and user experience (UX) design language has been strictly derived from the current **Apple.com** website, recreating its minimal, premium, and cinematic presentation using pure HTML and CSS.
+## Overview
+This repository hosts the static frontend for the `zvenians.github.io` portfolio. The goal of this project is to implement a strict, Apple-inspired visual system focusing on semantic HTML5, disciplined CSS architecture, cinematic product storytelling, and responsive layouts.
 
-> **Note:** This is a personal student project and is not affiliated with, endorsed by, or representing Apple Inc. It serves solely as an educational showcase of front-end capabilities in replicating world-class design systems.
+> **Disclaimer**: This is a personal/academic project engineered independently by Zvenians. It is strictly not affiliated with, endorsed by, or representing Apple Inc. It does not use proprietary Apple code, frameworks, or backend systems.
 
-## Features
-
-- **Apple.com Design System:** Faithfully recreates the current Apple visual language, including cinematic full-bleed heroes, massive display typography (`clamp()` based), deep blacks, soft grays, and precise spacing.
-- **Content-First Architecture:** Eliminates generic SaaS cards and boxed layouts in favor of edge-to-edge product storytelling blocks.
-- **Purely Static:** No React, Next.js, Firebase, or backend. Just high-quality HTML5, CSS3, and lightweight native JavaScript.
-- **Mobile-First Responsiveness:** Flawless rendering from 320px up to 4K displays. Features vertical cinematic storytelling on mobile without any horizontal overflow or bad image crops.
-- **Custom Apple-Style Elements:** Implements exact replicas of Apple's translucent frosted-glass navbar, minimalist footer directory, and signature `Learn more ›` typographic links.
+## Design Philosophy
+- **Typography Focus**: Utilizes native system fonts (`-apple-system`, `SF Pro Display`) in a carefully constrained typographic scale.
+- **Cinematic Pacing**: Content is separated into distinct visual modules (Full Bleed Heroes, Split Layouts, Horizontal Galleries) to control the scrolling rhythm.
+- **Restrained Colors**: Adheres strictly to a minimal palette (`#f5f5f7`, `#1d1d1f`, `#000000`, `#ffffff`, `#0066cc`).
+- **No SaaS Templates**: Avoids generic "card" dashboards in favor of large, editorial compositions and edge-to-edge product photography.
+- **Mobile First**: Navigation, heroes, and split-sections are meticulously responsive for viewports ranging from `320px` to `414px`.
 
 ## Pages
+- `index.html` - Homepage featuring a narrative product flow and Zvenians identity.
+- `mac.html` - A Mac product presentation utilizing split campaigns.
+- `store.html` - A retail discovery concept featuring horizontal-scroll interaction.
+- `biodata.html` - An editorial profile of the creator.
+- `contact_us.html` - Minimal directory for external links.
 
-1. **Homepage (`index.html`)**: Structured as a product landing page with alternating full-width hero campaigns and a 2-column product grid.
-2. **Mac (`mac.html`)**: A dedicated dark-mode product launch experience, prioritizing large imagery and concise product copy.
-3. **Store (`store.html`)**: A purely visual storefront exploration utilizing Apple's retail styling (light backgrounds, horizontal scrolling, clean typography).
-4. **Biodata (`biodata.html`)**: A premium editorial layout presenting personal information and skills without conventional Bootstrap UI elements.
-5. **Contact (`contact_us.html`)**: A highly minimal contact page focusing on clean typography and GitHub routing.
+## Tech Stack
+- HTML5 (Semantic architecture)
+- CSS3 (Native CSS variables, Flexbox, Grid, Scroll-snap)
+- Vanilla JavaScript (Lightweight DOM toggles for mobile menu)
+- Static hosting via GitHub Pages
 
-## Technologies
-
-- HTML5 (Semantic Structure)
-- CSS3 (Custom Properties, Flexbox, CSS Grid, Fluid Typography)
-- Responsive Design (Mobile-First approach)
+## Asset Handling & Image Sources
+All heavy imagery has been acquired locally to prevent hotlinking fragility. Image sources include high-quality promotional press assets from Apple Newsroom and official Apple media guidelines used strictly for educational/portfolio demonstration purposes.
+Assets are organized cleanly in `assets/images/`.
 
 ## Deployment
+This project is continuously deployed to the root GitHub Pages URL:
+`https://zvenians.github.io/`
 
-This repository is deployed automatically via **GitHub Pages**.
-
-**Live Site:** [https://zvenians.github.io/](https://zvenians.github.io/)
+---
+&copy; 2026 Zvenians. All rights reserved.

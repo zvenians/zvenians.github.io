@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zvenians</title>
-    <meta name="description" content="Apple-inspired responsive static web experience and personal profile project by Zvenians.">
+    <title>Zvenians - Apple Inspired Portfolio</title>
+    <meta name="description" content="Zvenians: An independent personal student project inspired by Apple's visual design language.">
     <meta name="theme-color" content="#000000">
+    <link rel="icon" href="assets/images/applelogo.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -28,9 +29,8 @@
 
     <main style="padding-top: var(--nav-height);">
         
-        <!-- 1. Large Hero -->
+        <!-- 1. Dominant Hero (Option C: Text top, Large Image bottom) -->
         <section class="hero-section theme-dark">
-            <img src="assets/images/macbook-air-m5.jpg" alt="MacBook Air M5" class="hero-media">
             <div class="hero-copy">
                 <h2 class="typography-hero-headline">MacBook Air</h2>
                 <h3 class="typography-hero-subhead">Lean. Mean. M5 machine.</h3>
@@ -39,125 +39,117 @@
                     <a href="store.html" class="cta-button cta-button-secondary">Buy</a>
                 </div>
             </div>
+            <img src="assets/images/macbook-air-m5.jpg" alt="MacBook Air M5" class="hero-media">
         </section>
 
-        <!-- 2. Quiet Section -->
-        <section class="feature-section theme-white" style="margin-bottom: 12px; max-width: 100%; padding: 180px 20px;">
-            <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
-                <h2 class="typography-hero-headline" style="font-size: clamp(32px, 5vw, 64px); line-height: 1.1; letter-spacing: -0.015em;">Profoundly powerful.<br>Perfectly minimal.</h2>
-                <p class="typography-intro" style="font-size: 21px; font-weight: 400; color: var(--text-gray); margin-top: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">A personal web experience engineered with the visual discipline, pacing, and typographic rigor of Apple.com.</p>
-            </div>
+        <!-- 2. Quiet Typography Break -->
+        <section class="feature-section theme-white">
+            <h2 class="typography-section-title">Profoundly powerful.<br>Perfectly minimal.</h2>
+            <p class="typography-intro" style="margin-top: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                A personal web experience engineered with the visual discipline, pacing, and typographic rigor of Apple.com.
+            </p>
         </section>
 
-        <!-- 3. Large Campaign -->
+        <!-- 3. Large Campaign (Option C) -->
         <section class="hero-section theme-light">
-            <img src="assets/images/mac-mini-m6.jpg" alt="Mac mini M6" class="hero-media" style="object-position: bottom center;">
             <div class="hero-copy">
-                <h2 class="typography-hero-headline" style="color: #1d1d1f;">Mac mini</h2>
-                <h3 class="typography-hero-subhead" style="color: #1d1d1f;">More muscle. More hustle.</h3>
+                <h2 class="typography-hero-headline">Mac mini</h2>
+                <h3 class="typography-hero-subhead">More muscle. More hustle.</h3>
                 <div class="cta-group">
                     <a href="mac.html" class="cta-button">Learn more</a>
                     <a href="store.html" class="cta-button cta-button-secondary">Buy</a>
                 </div>
             </div>
+            <img src="assets/images/mac-mini-m6.jpg" alt="Mac mini M6" class="hero-media" style="width: 80%;">
         </section>
 
-        <!-- 4. Split Section -->
-        <section class="split-section">
+        <!-- 4. Split Editorial Section (Option B) -->
+        <section class="split-section theme-white">
             <div class="split-copy">
-                <h2 class="typography-hero-headline" style="font-size: 48px;">iPhone 16 Pro</h2>
-                <h3 class="typography-hero-subhead" style="font-size: 24px;">Hello, Apple Intelligence.</h3>
+                <h2 class="typography-section-title">iPhone 16 Pro</h2>
+                <h3 class="typography-hero-subhead" style="margin-top: 12px;">Hello, Apple Intelligence.</h3>
                 <div class="cta-group">
                     <a href="store.html" class="cta-button">Learn more</a>
                     <a href="store.html" class="cta-button cta-button-secondary">Buy</a>
                 </div>
             </div>
             <div class="split-media-container">
-                <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro" class="split-media" style="object-position: center;">
+                <img src="assets/images/iphone-16-pro.jpg" alt="iPhone 16 Pro" class="split-media">
             </div>
         </section>
 
-        <!-- 5. Image-heavy section -->
-        <section class="hero-section theme-white" style="height: auto; padding: 120px 20px;">
-            <div class="hero-copy" style="position: relative; padding-top: 0; padding-bottom: 60px;">
-                <h2 class="typography-hero-headline" style="font-size: 56px;">Apple Intelligence</h2>
-                <h3 class="typography-hero-subhead" style="font-size: 28px;">AI for the rest of us.</h3>
+        <!-- 5. Image Dominant Section (Option D: Full Bleed) -->
+        <section class="hero-bleed theme-dark">
+            <img src="assets/images/apple-intelligence.jpg" alt="Apple Intelligence" class="hero-media" style="opacity: 0.6;">
+            <div class="hero-copy">
+                <h2 class="typography-hero-headline">Apple Intelligence</h2>
+                <h3 class="typography-hero-subhead">AI for the rest of us.</h3>
                 <div class="cta-group">
-                    <a href="mac.html" class="apple-link">Learn more</a>
+                    <a href="mac.html" class="cta-button" style="background-color: var(--bg-white); color: var(--text-dark);">Explore</a>
                 </div>
             </div>
-            <div style="max-width: 1200px; margin: 0 auto; width: 100%; position: relative; z-index: 1;">
-                <img src="assets/images/apple-intelligence.jpg" alt="Apple Intelligence" style="width: 100%; border-radius: 32px;">
-            </div>
         </section>
 
-        <!-- 6. Dark Section -->
-        <section class="hero-section theme-dark" style="margin-bottom: 0;">
-            <img src="assets/images/apple-watch.jpg" alt="Apple Watch" class="hero-media" style="opacity: 0.8;">
-            <div class="hero-copy">
-                <h2 class="typography-hero-headline"><img src="assets/images/applelogo.png" style="display:inline-block; height:44px; filter:brightness(0) invert(1); margin-right:8px; vertical-align: bottom;" alt="Apple">WATCH</h2>
-                <h3 class="typography-hero-subhead" style="color: #f5f5f7;">Thinstant classic.</h3>
+        <!-- 6. Dark Campaign (Split) -->
+        <section class="split-section theme-dark" style="background-color: var(--bg-dark); flex-direction: row-reverse;">
+            <div class="split-copy">
+                <h2 class="typography-section-title">
+                    <img src="assets/images/applelogo.png" style="height: 36px; filter: brightness(0) invert(1); vertical-align: middle; margin-right: 4px;" alt="Apple">WATCH
+                </h2>
+                <h3 class="typography-hero-subhead" style="margin-top: 12px;">Thinstant classic.</h3>
                 <div class="cta-group">
                     <a href="store.html" class="apple-link">Learn more</a>
                     <a href="store.html" class="apple-link">Buy</a>
                 </div>
             </div>
+            <div class="split-media-container">
+                <img src="assets/images/apple-watch.jpg" alt="Apple Watch" class="split-media">
+            </div>
         </section>
 
-        <!-- 7. Personal Section -->
-        <section class="feature-section theme-light" style="padding: 160px 20px;">
+        <!-- 7. Zvenians Identity -->
+        <section class="feature-section theme-light" style="padding-top: 100px; padding-bottom: 100px;">
             <span class="typography-eyebrow">The Creator</span>
-            <h2 class="typography-intro" style="font-size: 40px; margin: 16px 0 32px; color: #1d1d1f;">Designed and built by Zvenians.</h2>
-            <p style="font-size: 21px; color: var(--text-gray); max-width: 600px; margin: 0 auto;">A complete visual redesign from the ground up, moving away from 2020 legacy concepts into a modern, cinematic, mobile-first static experience.</p>
+            <h2 class="typography-section-title" style="margin-top: 16px;">Designed by Zvenians.</h2>
+            <p class="typography-intro" style="margin-top: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                A complete visual reconstruction from the ground up. Moving away from legacy concepts into a modern, cinematic static experience.
+            </p>
             <div class="cta-group" style="margin-top: 40px;">
-                <a href="biodata.html" class="cta-button">View Biodata</a>
-                <a href="https://github.com/zvenians" target="_blank" rel="noopener" class="cta-button cta-button-secondary">GitHub</a>
+                <a href="biodata.html" class="cta-button">View Profile</a>
             </div>
         </section>
 
     </main>
 
-    <footer class="global-footer">
-        <div class="global-footer-content">
-            <div style="padding-bottom: 16px;">
-                <p>1. This is a personal project engineered independently by Zvenians.</p>
-                <p>2. It is strictly not affiliated with, endorsed by, or representing Apple Inc.</p>
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <div class="footer-intro">
+                <p><strong>ZVENIANS</strong></p>
+                <p>Independent static web project inspired by Apple design.</p>
             </div>
             
             <div class="footer-directory">
                 <div class="footer-column">
-                    <h3>Explore Zvenians</h3>
+                    <h3>Explore</h3>
                     <ul>
-                        <li><a href="index.html">Home Overview</a></li>
-                        <li><a href="mac.html">Mac Concept</a></li>
-                        <li><a href="store.html">Retail Concept</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mac.html">Mac</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="biodata.html">Biodata</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Personal Info</h3>
-                    <ul>
-                        <li><a href="biodata.html">Profile & Biodata</a></li>
-                        <li><a href="contact_us.html">Contact Information</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Development</h3>
+                    <h3>Connect</h3>
                     <ul>
                         <li><a href="https://github.com/zvenians" target="_blank" rel="noopener">GitHub Profile</a></li>
                         <li><a href="https://github.com/zvenians/zvenians.github.io" target="_blank" rel="noopener">Source Code</a></li>
-                        <li><a href="#">Report an Issue</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <div>Copyright © 2026 Zvenians. All rights reserved.</div>
-                <div class="footer-legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Site Map</a>
-                </div>
-                <div>United States</div>
+                <div>&copy; 2026 Zvenians. Independent project inspired by Apple design.</div>
             </div>
         </div>
     </footer>
