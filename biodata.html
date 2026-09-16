@@ -3,74 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata | Zvenians</title>
-    <meta name="description" content="Personal profile and biodata of Zvenians.">
-    <meta name="theme-color" content="#f5f5f7">
+    <title>Biodata - Zvenians</title>
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .profile-section {
-            padding: calc(var(--nav-height) + 80px) 20px 80px;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .profile-image {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 40px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-        .profile-name {
-            font-size: 56px;
-            font-weight: 600;
-            letter-spacing: -0.005em;
-            margin-bottom: 8px;
-        }
-        .profile-role {
-            font-size: 24px;
-            color: #86868b;
-            font-weight: 400;
-            margin-bottom: 32px;
-        }
-        .profile-intro {
-            font-size: 19px;
-            line-height: 1.4;
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
-        .skills-header {
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: #86868b;
-            letter-spacing: 0.1em;
-            margin-bottom: 20px;
-        }
-        .skills-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 40px;
-        }
-        .skill-item {
-            font-size: 17px;
-            background-color: #ffffff;
-            padding: 8px 16px;
-            border-radius: 20px;
-            border: 1px solid #d2d2d7;
-        }
-    </style>
 </head>
-<body>
-    <nav class="navbar" style="background-color: rgba(255,255,255,0.8); border-bottom: 1px solid rgba(0,0,0,0.16);">
-        <div class="container">
+<body style="background-color: var(--surface-color);">
+    <nav class="navbar" style="background-color: rgba(255, 255, 255, 0.8); border-bottom: 1px solid rgba(0,0,0,0.16);">
+        <div class="nav-container">
             <a href="index.html" class="nav-brand" aria-label="Home">
                 <img src="assets/images/applelogo.png" alt="Apple Logo" style="filter: brightness(0);">
             </a>
-            <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" style="color: #1d1d1f;">
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation" style="color: #1d1d1f;">
                 <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
             <div class="nav-links">
@@ -82,73 +25,48 @@
         </div>
     </nav>
 
-    <main>
-        <section class="profile-section">
-            <img src="assets/images/IMG_4488.JPG" alt="Zvenians Portrait" class="profile-image">
-            <h1 class="profile-name">Zvenians</h1>
-            <p class="profile-role">Developer & Designer</p>
-            
-            <p class="profile-intro">
-                Welcome to my personal showcase. This repository began as a 2020 web development study and has evolved into a modern static presentation. It reflects an ongoing interest in clean layouts, structural HTML, and minimal aesthetics.
-            </p>
+    <main class="profile-section">
+        <img src="assets/images/IMG_4488.JPG" alt="Zvenians Portrait" class="profile-img">
+        
+        <h1 class="headline" style="font-size: 48px; color: var(--text-primary);">Zvenians</h1>
+        <p class="subhead" style="font-size: 21px; color: var(--text-secondary); margin-bottom: 32px;">Developer & Designer</p>
+        
+        <p style="font-size: 19px; line-height: 1.5; color: var(--text-primary); max-width: 600px; margin: 0 auto 40px;">
+            Welcome to my personal showcase. This repository began as a 2020 web development study and has evolved into a modern static presentation. It reflects an ongoing interest in clean layouts, structural HTML, and minimal aesthetics.
+        </p>
 
-            <h2 class="skills-header">Selected Skills</h2>
-            <div class="skills-list">
-                <span class="skill-item">Web Design</span>
-                <span class="skill-item">HTML5</span>
-                <span class="skill-item">CSS3</span>
-                <span class="skill-item">Responsive Layout</span>
+        <div style="margin-bottom: 60px;">
+            <p style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.1em; margin-bottom: 24px;">Selected Skills</p>
+            <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                <span style="background-color: var(--bg-color); padding: 12px 24px; border-radius: 99px; font-size: 17px; font-weight: 500;">Web Design</span>
+                <span style="background-color: var(--bg-color); padding: 12px 24px; border-radius: 99px; font-size: 17px; font-weight: 500;">HTML5 / CSS3</span>
+                <span style="background-color: var(--bg-color); padding: 12px 24px; border-radius: 99px; font-size: 17px; font-weight: 500;">Responsive Layout</span>
             </div>
+        </div>
 
-            <div>
-                <a href="https://github.com/zvenians" class="apple-link" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
-            </div>
-        </section>
+        <a href="https://github.com/zvenians" class="btn-primary" target="_blank" rel="noopener">View GitHub Profile</a>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 16px; margin-bottom: 16px;">
-                <p>More ways to shop: Visit a <a href="#" style="color: var(--link-color);">Store</a>, call 1-800-MY-APPLE, or <a href="#" style="color: var(--link-color);">find a reseller</a>.</p>
+            <div style="border-bottom: 1px solid #d2d2d7; padding-bottom: 16px; margin-bottom: 16px;">
+                <p>1. This is a personal student project and is not affiliated with Apple Inc.</p>
             </div>
-            <div class="footer-nav">
-                <div class="footer-col">
-                    <h3>Explore</h3>
-                    <ul>
-                        <li><a href="mac.html">Mac</a></li>
-                        <li><a href="#">iPad</a></li>
-                        <li><a href="#">iPhone</a></li>
-                        <li><a href="#">Watch</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Account</h3>
-                    <ul>
-                        <li><a href="biodata.html">Manage Biodata</a></li>
-                        <li><a href="store.html">Store Account</a></li>
-                        <li><a href="#">iCloud.com</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
+            <div class="footer-directory">
+                <div class="footer-column">
                     <h3>About Zvenians</h3>
                     <ul>
+                        <li><a href="biodata.html">Biodata</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
-                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener">GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div>Copyright © 2026 Zvenians. All rights reserved.</div>
-                <div style="display:flex; gap:16px;">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Legal</a>
-                    <a href="#">Site Map</a>
-                </div>
                 <div>United States</div>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

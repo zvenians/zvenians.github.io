@@ -1,54 +1,35 @@
-# Zvenians Portfolio Showcase
+# Zvenians Portfolio
 
-A minimalist, premium static showcase exploring layout, typography, and responsive restraint.
+**Apple-inspired responsive static web experience and personal profile project.**
 
-## Overview
+This project is a complete modern redesign of a historical 2020 web development student project. The visual and user experience (UX) design language has been strictly derived from the current **Apple.com** website, recreating its minimal, premium, and cinematic presentation using pure HTML and CSS.
 
-This project is a purely static website serving as a personal portfolio showcase for Zvenians. It emphasizes clean HTML/CSS architecture, a strict design system, and an editorial presentation without the need for complex frontend frameworks or backend logic.
+> **Note:** This is a personal student project and is not affiliated with, endorsed by, or representing Apple Inc. It serves solely as an educational showcase of front-end capabilities in replicating world-class design systems.
 
 ## Features
 
-- Fully responsive design (mobile, tablet, desktop)
-- Custom CSS framework with variables
-- Semantic HTML5 structure
-- No external CSS/JS dependencies (Zero-dependency layout)
-- Accessible color contrast and focus states
+- **Apple.com Design System:** Faithfully recreates the current Apple visual language, including cinematic full-bleed heroes, massive display typography (`clamp()` based), deep blacks, soft grays, and precise spacing.
+- **Content-First Architecture:** Eliminates generic SaaS cards and boxed layouts in favor of edge-to-edge product storytelling blocks.
+- **Purely Static:** No React, Next.js, Firebase, or backend. Just high-quality HTML5, CSS3, and lightweight native JavaScript.
+- **Mobile-First Responsiveness:** Flawless rendering from 320px up to 4K displays. Features vertical cinematic storytelling on mobile without any horizontal overflow or bad image crops.
+- **Custom Apple-Style Elements:** Implements exact replicas of Apple's translucent frosted-glass navbar, minimalist footer directory, and signature `Learn more ›` typographic links.
 
 ## Pages
 
-- `index.html`: The hero landing page with visual collections.
-- `mac.html`: A hardware gallery showcase.
-- `store.html`: A conceptual static storefront layout.
-- `biodata.html`: Personal profile and skills.
-- `contact_us.html`: Clean contact and external links.
+1. **Homepage (`index.html`)**: Structured as a product landing page with alternating full-width hero campaigns and a 2-column product grid.
+2. **Mac (`mac.html`)**: A dedicated dark-mode product launch experience, prioritizing large imagery and concise product copy.
+3. **Store (`store.html`)**: A purely visual storefront exploration utilizing Apple's retail styling (light backgrounds, horizontal scrolling, clean typography).
+4. **Biodata (`biodata.html`)**: A premium editorial layout presenting personal information and skills without conventional Bootstrap UI elements.
+5. **Contact (`contact_us.html`)**: A highly minimal contact page focusing on clean typography and GitHub routing.
 
-## Tech Stack
+## Technologies
 
-- HTML5
-- CSS3 (Vanilla)
-- Minimal Vanilla JavaScript (for mobile navigation)
-
-## Design
-
-The design direction is premium, modern, and editorial. It relies on:
-- A stark dark-mode-first color palette.
-- High-contrast typography using system fonts.
-- Generous whitespace and padding.
-- Consistent border radii and subtle hover effects.
-
-## Assets
-
-Images are largely sourced from legacy structural studies inspired by Apple product photography, kept here for layout demonstration purposes. My personal photo (`IMG_4488.JPG`) is used for the Biodata profile. External resources have been consolidated into local assets where possible to ensure the site is self-contained.
+- HTML5 (Semantic Structure)
+- CSS3 (Custom Properties, Flexbox, CSS Grid, Fluid Typography)
+- Responsive Design (Mobile-First approach)
 
 ## Deployment
 
-This site is deployed to GitHub Pages.
-Live URL: [https://zvenians.github.io/](https://zvenians.github.io/)
+This repository is deployed automatically via **GitHub Pages**.
 
-## Project Status
-
-Complete. This is a static HTML/CSS presentation and is not intended to have functional backend features like store checkouts or live contact forms.
-
-## Historical Context
-
-This repository evolved from an older 2020 student web development study. It has been entirely rewritten and redesigned to shed legacy dependencies (like Bootstrap 4 and jQuery) and adopt modern frontend practices, shedding the "student project" feel for a sophisticated portfolio standard.
+**Live Site:** [https://zvenians.github.io/](https://zvenians.github.io/)

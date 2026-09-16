@@ -3,76 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store | Zvenians</title>
-    <meta name="description" content="A static storefront exploration layout by Zvenians.">
+    <title>Store - Zvenians</title>
     <meta name="theme-color" content="#f5f5f7">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .store-header {
-            padding: calc(var(--nav-height) + 60px) 20px 40px;
-            max-width: 980px;
-            margin: 0 auto;
-        }
-        .store-title {
-            font-size: 48px;
-            font-weight: 600;
-            letter-spacing: -0.003em;
-            line-height: 1.08365;
-            color: #1d1d1f;
-        }
-        .store-title span {
-            color: #86868b;
-        }
-        .store-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-            max-width: 980px;
-            margin: 0 auto 60px;
-        }
-        @media (max-width: 768px) {
-            .store-grid { grid-template-columns: 1fr; }
-            .store-title { font-size: 32px; }
-        }
-        .store-card {
-            background-color: #ffffff;
-            border-radius: 18px;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-        .store-card:hover {
-            transform: scale(1.02);
-        }
-        .store-card img {
-            height: 160px;
-            object-fit: contain;
-            margin-bottom: 20px;
-        }
-        .store-card h3 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        .store-card p {
-            font-size: 14px;
-            color: #86868b;
-        }
-    </style>
 </head>
-<body>
-    <nav class="navbar" style="background-color: rgba(255,255,255,0.8); border-bottom: 1px solid rgba(0,0,0,0.16);">
-        <div class="container">
+<body style="background-color: var(--bg-color);">
+    <nav class="navbar" style="background-color: rgba(255, 255, 255, 0.8); border-bottom: 1px solid rgba(0,0,0,0.16);">
+        <div class="nav-container">
             <a href="index.html" class="nav-brand" aria-label="Home">
                 <img src="assets/images/applelogo.png" alt="Apple Logo" style="filter: brightness(0);">
             </a>
-            <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" style="color: #1d1d1f;">
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation" style="color: #1d1d1f;">
                 <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
             <div class="nav-links">
@@ -84,74 +25,93 @@
         </div>
     </nav>
 
-    <main>
-        <div class="store-header">
-            <h1 class="store-title">Store. <span>The best way to buy the products you love.</span></h1>
-            <p class="subhead" style="margin-top: 16px; color: #86868b; font-size: 17px;">A purely static retail exploration layout. No actual checkout logic exists.</p>
+    <main style="padding-top: calc(var(--nav-height) + 60px);">
+        
+        <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+            <h1 style="font-size: 48px; font-weight: 600; letter-spacing: -0.003em; margin-bottom: 60px; color: var(--text-primary);">
+                Store. <span style="color: var(--text-secondary);">The best way to buy the products you love.</span>
+            </h1>
+
+            <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 40px; scroll-snap-type: x mandatory; scrollbar-width: none;">
+                
+                <div style="flex: 0 0 300px; scroll-snap-align: start; text-align: center;">
+                    <img src="assets/images/mac_ipad_ipod_hero.png" alt="Mac" style="height: 120px; object-fit: contain; margin: 0 auto 16px;">
+                    <h3 style="font-weight: 600; font-size: 17px;">Mac</h3>
+                </div>
+                
+                <div style="flex: 0 0 300px; scroll-snap-align: start; text-align: center;">
+                    <img src="assets/images/hero_iphone.jpg" alt="iPhone" style="height: 120px; object-fit: cover; margin: 0 auto 16px; border-radius: 12px;">
+                    <h3 style="font-weight: 600; font-size: 17px;">iPhone</h3>
+                </div>
+
+                <div style="flex: 0 0 300px; scroll-snap-align: start; text-align: center;">
+                    <img src="assets/images/shop_for_college_large.jpg" alt="iPad" style="height: 120px; object-fit: cover; margin: 0 auto 16px; border-radius: 12px;">
+                    <h3 style="font-weight: 600; font-size: 17px;">iPad</h3>
+                </div>
+                
+                <div style="flex: 0 0 300px; scroll-snap-align: start; text-align: center;">
+                    <img src="assets/images/watch_series_3_large.jpg" alt="Apple Watch" style="height: 120px; object-fit: contain; margin: 0 auto 16px;">
+                    <h3 style="font-weight: 600; font-size: 17px;">Apple Watch</h3>
+                </div>
+
+            </div>
+
+            <h2 style="font-size: 28px; font-weight: 600; margin-top: 40px; margin-bottom: 24px;">The latest. <span style="color: var(--text-secondary);">Take a look at what’s new, right now.</span></h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px;">
+                <div style="background-color: var(--surface-color); border-radius: 18px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <p style="font-size: 12px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase;">MacBook Air</p>
+                        <h3 style="font-size: 24px; font-weight: 600; margin-top: 8px;">Lean. Mean. M3 machine.</h3>
+                        <p style="margin-top: 8px;">From $1099</p>
+                    </div>
+                    <img src="assets/images/hero_macbook.jpg" alt="MacBook Air" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+                </div>
+
+                <div style="background-color: var(--bg-dark); color: var(--text-dark-primary); border-radius: 18px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <p style="font-size: 12px; font-weight: 600; color: var(--text-dark-secondary); text-transform: uppercase;">iPhone 16 Pro</p>
+                        <h3 style="font-size: 24px; font-weight: 600; margin-top: 8px;">Hello, Apple Intelligence.</h3>
+                        <p style="margin-top: 8px;">From $999</p>
+                    </div>
+                    <img src="assets/images/hero_iphone.jpg" alt="iPhone 16 Pro" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+                </div>
+            </div>
         </div>
 
-        <div class="store-grid">
-            <div class="store-card">
-                <img src="assets/images/iphone_8_large.jpg" alt="iPhone 8">
-                <h3>iPhone</h3>
-                <p>Classic design.</p>
-            </div>
-            <div class="store-card">
-                <img src="assets/images/airpods_large.jpg" alt="AirPods">
-                <h3>AirPods</h3>
-                <p>Wireless. Effortless.</p>
-            </div>
-            <div class="store-card">
-                <img src="assets/images/watch_series_3_large.jpg" alt="Watch">
-                <h3>Apple Watch</h3>
-                <p>Freedom of cellular.</p>
-            </div>
-        </div>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 16px; margin-bottom: 16px;">
-                <p>More ways to shop: Visit a <a href="#" style="color: var(--link-color);">Store</a>, call 1-800-MY-APPLE, or <a href="#" style="color: var(--link-color);">find a reseller</a>.</p>
+            <div style="border-bottom: 1px solid #d2d2d7; padding-bottom: 16px; margin-bottom: 16px;">
+                <p>1. This is a personal student project and is not affiliated with Apple Inc.</p>
             </div>
-            <div class="footer-nav">
-                <div class="footer-col">
-                    <h3>Explore</h3>
+            <div class="footer-directory">
+                <div class="footer-column">
+                    <h3>Shop and Learn</h3>
                     <ul>
+                        <li><a href="store.html">Store</a></li>
                         <li><a href="mac.html">Mac</a></li>
-                        <li><a href="#">iPad</a></li>
-                        <li><a href="#">iPhone</a></li>
-                        <li><a href="#">Watch</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h3>Account</h3>
-                    <ul>
-                        <li><a href="biodata.html">Manage Biodata</a></li>
-                        <li><a href="store.html">Store Account</a></li>
-                        <li><a href="#">iCloud.com</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
+                <div class="footer-column">
                     <h3>About Zvenians</h3>
                     <ul>
+                        <li><a href="biodata.html">Biodata</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
-                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener">GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div>Copyright © 2026 Zvenians. All rights reserved.</div>
-                <div style="display:flex; gap:16px;">
+                <div>Copyright © 2026 Zvenians. All rights reserved. (Inspired by Apple)</div>
+                <div style="display: flex; gap: 16px;">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
-                    <a href="#">Legal</a>
-                    <a href="#">Site Map</a>
                 </div>
                 <div>United States</div>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

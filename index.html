@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zvenians | Portfolio</title>
-    <meta name="description" content="A minimalist, premium static showcase by Zvenians.">
+    <title>Zvenians</title>
+    <meta name="description" content="Apple-inspired responsive static web experience and personal profile project.">
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="dark-mode">
+<body>
     <nav class="navbar">
-        <div class="container">
+        <div class="nav-container">
             <a href="index.html" class="nav-brand" aria-label="Home">
                 <img src="assets/images/applelogo.png" alt="Apple Logo">
             </a>
-            <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation">
                 <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
             <div class="nav-links">
@@ -26,145 +26,146 @@
         </div>
     </nav>
 
-    <main>
-        <section class="section hero dark">
-            <div class="section-content">
-                <h1 class="headline">iPhone 11 Pro</h1>
-                <h2 class="subhead">Pro cameras. Pro display. Pro performance.</h2>
-                <div class="section-links">
-                    <a href="store.html" class="apple-link">Learn more</a>
-                    <a href="store.html" class="apple-link">Buy</a>
+    <main style="padding-top: var(--nav-height);">
+        
+        <!-- HERO 1 -->
+        <section class="product-hero dark">
+            <img src="assets/images/hero_iphone.jpg" alt="iPhone 16 Pro" class="hero-image">
+            <div class="hero-content">
+                <h2 class="headline" style="color: #f5f5f7;">iPhone 16 Pro</h2>
+                <h3 class="subhead" style="color: #f5f5f7;">Hello, Apple Intelligence.</h3>
+                <div class="cta-links">
+                    <a href="store.html" class="btn-primary">Learn more</a>
+                    <a href="store.html" class="btn-secondary" style="border-color: #f5f5f7; color: #f5f5f7;">Buy</a>
                 </div>
-            </div>
-            <div class="section-image" style="margin-top: 50px;">
-                <img src="assets/images/hero3.jpg" alt="iPhone 11 Pro">
             </div>
         </section>
 
-        <section class="section light">
-            <div class="section-content">
-                <h1 class="headline">iPhone SE</h1>
-                <h2 class="subhead">Lots to love. Less to spend.</h2>
-                <div class="section-links">
-                    <a href="store.html" class="apple-link">Learn more</a>
-                    <a href="store.html" class="apple-link">Buy</a>
+        <!-- HERO 2 -->
+        <section class="product-hero">
+            <img src="assets/images/hero_macbook.jpg" alt="MacBook Air" class="hero-image">
+            <div class="hero-content">
+                <h2 class="headline">MacBook Air</h2>
+                <h3 class="subhead">Lean. Mean. M3 machine.</h3>
+                <div class="cta-links">
+                    <a href="mac.html" class="btn-primary">Learn more</a>
+                    <a href="mac.html" class="btn-secondary" style="border-color: var(--link-color);">Buy</a>
                 </div>
-            </div>
-            <div class="section-image" style="margin-top: 40px;">
-                <img src="assets/images/hero.jpg" alt="iPhone SE">
             </div>
         </section>
 
-        <div class="module-grid">
-            <article class="module has-bg-image content-bottom">
-                <img src="assets/images/shop_for_college_large.jpg" alt="Turn up summer" class="module-bg">
-                <div class="module-content">
-                    <h3 class="module-title">Turn up summer.</h3>
-                    <h4 class="module-subhead">Buy a Mac or iPad Pro for college.<br>Get Beats on us.</h4>
-                </div>
-            </article>
-
-            <article class="module dark has-bg-image content-bottom">
-                <img src="assets/images/behind_the_mac_boniface_large.jpg" alt="Behind the Mac" class="module-bg">
-                <div class="module-content">
-                    <h3 class="module-title">Behind the Mac</h3>
-                    <div class="module-links">
-                        <a href="mac.html" class="apple-link">Watch the film</a>
-                        <a href="mac.html" class="apple-link">Explore Mac</a>
+        <!-- GRID -->
+        <section class="product-grid">
+            
+            <article class="product-card">
+                <div class="card-content">
+                    <h2 class="card-title">iPhone 16</h2>
+                    <h3 class="subhead" style="font-size: 21px;">Hello, Apple Intelligence.</h3>
+                    <div class="cta-links">
+                        <a href="store.html" class="btn-primary">Learn more</a>
+                        <a href="store.html" class="btn-secondary" style="border-color: var(--link-color);">Buy</a>
                     </div>
                 </div>
+                <img src="assets/images/hero.jpg" alt="iPhone 16" class="card-image" style="object-fit: cover;">
             </article>
 
-            <article class="module light content-bottom">
-                <div class="module-content" style="padding-top: 40px; padding-bottom: 0;">
-                    <h3 class="module-title">iPhone 8</h3>
-                    <h4 class="module-subhead">A new generation of iPhone.</h4>
-                    <div class="module-links">
-                        <a href="store.html" class="apple-link">Learn more</a>
-                        <a href="store.html" class="apple-link">Buy</a>
+            <article class="product-card dark">
+                <div class="card-content">
+                    <h2 class="card-title">WATCH</h2>
+                    <h3 class="subhead" style="font-size: 21px; color: #f5f5f7;">Thinstant classic.</h3>
+                    <div class="cta-links">
+                        <a href="store.html" class="btn-primary">Learn more</a>
+                        <a href="store.html" class="btn-secondary" style="border-color: #f5f5f7; color: #f5f5f7;">Buy</a>
                     </div>
                 </div>
-                <img src="assets/images/iphone_8_large.jpg" alt="iPhone 8" style="margin-top: 30px; object-fit: contain; width: 100%; height: 100%; z-index: 1;">
+                <img src="assets/images/watch_series_3_large.jpg" alt="Apple Watch" class="card-image">
             </article>
 
-            <article class="module dark has-bg-image">
-                <img src="assets/images/how_to_shoot_large.jpg" alt="How to shoot on iPhone" class="module-bg">
-                <div class="module-content">
-                    <h3 class="module-title">How to shoot on iPhone</h3>
-                    <h4 class="module-subhead">Make the beautiful game even more beautiful.</h4>
-                </div>
-            </article>
-
-            <article class="module light content-bottom">
-                <div class="module-content" style="padding-top: 40px; padding-bottom: 0;">
-                    <h3 class="module-title">AirPods</h3>
-                    <h4 class="module-subhead">Wireless. Effortless. Magical.</h4>
-                    <div class="module-links">
-                        <a href="store.html" class="apple-link">Learn more</a>
-                        <a href="store.html" class="apple-link">Buy</a>
+            <article class="product-card">
+                <div class="card-content">
+                    <h2 class="card-title">AirPods 4</h2>
+                    <h3 class="subhead" style="font-size: 21px;">Iconic. Now supersonic.</h3>
+                    <div class="cta-links">
+                        <a href="store.html" class="btn-primary">Learn more</a>
+                        <a href="store.html" class="btn-secondary" style="border-color: var(--link-color);">Buy</a>
                     </div>
                 </div>
-                <img src="assets/images/airpods_large.jpg" alt="AirPods" style="margin-top: 30px; object-fit: contain; width: 100%; height: 100%; z-index: 1;">
+                <img src="assets/images/airpods_large.jpg" alt="AirPods" class="card-image">
             </article>
 
-            <article class="module light content-bottom">
-                <div class="module-content" style="padding-top: 40px; padding-bottom: 0;">
-                    <h3 class="module-title"><img src="assets/images/applelogo.png" style="display:inline-block; height:32px; filter:brightness(0); vertical-align:text-bottom;" alt="Apple"> WATCH</h3>
-                    <h4 class="module-subhead">The freedom of cellular.</h4>
-                    <div class="module-links">
-                        <a href="store.html" class="apple-link">Learn more</a>
-                        <a href="store.html" class="apple-link">Buy</a>
+            <article class="product-card">
+                <div class="card-content">
+                    <h2 class="card-title">iPad Pro</h2>
+                    <h3 class="subhead" style="font-size: 21px;">Unbelievably thin.</h3>
+                    <div class="cta-links">
+                        <a href="store.html" class="btn-primary">Learn more</a>
+                        <a href="store.html" class="btn-secondary" style="border-color: var(--link-color);">Buy</a>
                     </div>
                 </div>
-                <img src="assets/images/watch_series_3_large.jpg" alt="Watch" style="margin-top: 30px; object-fit: contain; width: 100%; height: 100%; z-index: 1;">
+                <img src="assets/images/shop_for_college_large.jpg" alt="iPad Pro" class="card-image" style="object-fit: cover;">
             </article>
-        </div>
+
+        </section>
+
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div style="border-bottom: 1px solid var(--border-dark); padding-bottom: 16px; margin-bottom: 16px;">
-                <p>More ways to shop: Visit a <a href="#" style="color: var(--link-color);">Store</a>, call 1-800-MY-APPLE, or <a href="#" style="color: var(--link-color);">find a reseller</a>.</p>
+            <div style="border-bottom: 1px solid #d2d2d7; padding-bottom: 16px; margin-bottom: 16px;">
+                <p>1. This is a personal student project and is not affiliated with Apple Inc.</p>
+                <p>2. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device.</p>
             </div>
-            <div class="footer-nav">
-                <div class="footer-col">
-                    <h3>Explore</h3>
+            
+            <div class="footer-directory">
+                <div class="footer-column">
+                    <h3>Shop and Learn</h3>
                     <ul>
+                        <li><a href="store.html">Store</a></li>
                         <li><a href="mac.html">Mac</a></li>
                         <li><a href="#">iPad</a></li>
                         <li><a href="#">iPhone</a></li>
                         <li><a href="#">Watch</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">AirPods</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-column">
                     <h3>Account</h3>
                     <ul>
-                        <li><a href="biodata.html">Manage Biodata</a></li>
-                        <li><a href="store.html">Store Account</a></li>
+                        <li><a href="biodata.html">Manage Zvenians Profile</a></li>
+                        <li><a href="#">Apple Store Account</a></li>
                         <li><a href="#">iCloud.com</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h3>Values</h3>
+                <div class="footer-column">
+                    <h3>Apple Store</h3>
                     <ul>
-                        <li><a href="#">Accessibility</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Genius Bar</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Apple Camp</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-column">
                     <h3>About Zvenians</h3>
                     <ul>
+                        <li><a href="biodata.html">Biodata</a></li>
                         <li><a href="contact_us.html">Contact Us</a></li>
-                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://github.com/zvenians" target="_blank" rel="noopener">GitHub</a></li>
                     </ul>
                 </div>
             </div>
+            
+            <div style="margin-top: 10px; color: var(--text-secondary);">
+                More ways to shop: <a href="#" style="color: var(--link-color); text-decoration: underline;">Find an Apple Store</a> or <a href="#" style="color: var(--link-color); text-decoration: underline;">other retailer</a> near you. Or call 1-800-MY-APPLE.
+            </div>
+            
             <div class="footer-bottom">
-                <div>Copyright © 2026 Zvenians. All rights reserved.</div>
-                <div style="display:flex; gap:16px;">
+                <div>Copyright © 2026 Zvenians. All rights reserved. (Inspired by Apple)</div>
+                <div style="display: flex; gap: 16px;">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
+                    <a href="#">Sales and Refunds</a>
                     <a href="#">Legal</a>
                     <a href="#">Site Map</a>
                 </div>
@@ -172,6 +173,5 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>
