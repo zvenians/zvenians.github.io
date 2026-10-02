@@ -7,27 +7,30 @@
     <meta name="description" content="Zvenians: An independent personal student project inspired by Apple's visual design language.">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="assets/images/applelogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="theme-white">
-    <nav class="global-nav">
-        <div class="global-nav-content">
+    <nav class="navbar navbar-expand-lg global-nav" data-bs-theme="dark" aria-label="Primary navigation">
+        <div class="container-xl">
             <a href="index.html" class="global-nav-brand" aria-label="Home">
                 <img src="assets/images/applelogo.png" alt="Apple Logo">
             </a>
-            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
-                <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav-menu-icon"></span>
             </button>
-            <div class="global-nav-links">
-                <a href="mac.html">Mac</a>
-                <a href="store.html">Store</a>
-                <a href="biodata.html">Biodata</a>
-                <a href="contact_us.html">Contact</a>
+            <div class="collapse navbar-collapse justify-content-end" id="primaryNav">
+                <div class="navbar-nav align-items-lg-center">
+                    <a class="nav-link" href="mac.html">Mac</a>
+                    <a class="nav-link" href="store.html">Store</a>
+                    <a class="nav-link" href="biodata.html">Biodata</a>
+                    <a class="nav-link" href="contact_us.html">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main style="padding-top: var(--nav-height);">
+    <main>
         
         <!-- 01 HERO: Option C - Text Top, Transparent Isolated Image Bottom -->
         <section class="hero-isolated theme-white">
@@ -41,7 +44,7 @@
             </div>
             <div class="hero-isolated-media">
                 <!-- Using a transparent cutout image to ensure 0 overlap and perfect composition -->
-                <img src="assets/images/macbook-air-m5-transparent.jpg" alt="MacBook Air M5">
+                <img src="assets/images/macbook-air-m5.jpg" alt="MacBook Air M5">
             </div>
         </section>
 
@@ -158,6 +161,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
