@@ -9,6 +9,13 @@ This repository is a static front-end concept.
 - Avoid unverified product specifications or misleading claims of affiliation.
 
 ## Review
+
+Run the repository's static-page checks before proposing changes:
+
+```sh
+node --test tests/static-site.test.mjs
+```
+
 ```sh
 node --check js/script.js
 python -m http.server 8000
