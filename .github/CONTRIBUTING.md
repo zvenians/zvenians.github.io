@@ -10,15 +10,19 @@ This repository is a static front-end concept.
 
 ## Review
 
-Run the repository's static-page checks before proposing changes:
+Run the static-page and JavaScript checks:
 
 ```sh
 node --test tests/static-site.test.mjs
+node --check js/script.js
 ```
+
+The CI workflow also runs Chromium browser smoke tests. To reproduce those locally, install the CI-pinned Playwright version and Chromium:
 
 ```sh
-node --check js/script.js
-python -m http.server 8000
+npm install --no-save --no-package-lock playwright@1.62.1
+npx playwright install chromium
+node tests/browser-smoke.mjs
 ```
 
-Check all five pages, relative assets, navigation, and links locally. Record what was tested and what was not. There is no automated test suite in this repository.
+Browser checks cover five pages at mobile and desktop widths, including the mobile navigation menu, horizontal overflow, and uncaught JavaScript errors. Check third-party asset attribution and real-device behavior separately; record checks not performed.
