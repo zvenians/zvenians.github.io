@@ -61,7 +61,8 @@ try {
     if (width === 375) {
       await page.locator('.navbar-toggler').click();
       await page.locator('#primaryNav').waitFor({ state: 'visible', timeout: 15000 });
-      assert.equal(await page.locator('#primaryNav').getAttribute('class')?.then(s => s.includes('show')), true);
+      const classes = await page.locator('#primaryNav').getAttribute('class');
+      assert.ok(classes?.includes('show'), 'Mobile menu did not expand');
     }
     await page.close();
   }
